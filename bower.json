@@ -1,5 +1,5 @@
 {
-  "name": "angular-resource",
+  "name": "angular-resource-slashfix",
   "version": "1.0.8",
   "main": "./angular-resource.js",
   "dependencies": {
