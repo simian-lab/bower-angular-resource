@@ -318,7 +318,7 @@ angular.module('ngResource', ['ng']).
             });
           }
         });
-        url = url.replace(/\/?#$/, '');
+        url = url.replace(/#$/, '');
         var query = [];
         forEach(params, function(value, key){
           if (!self.urlParams[key]) {
@@ -326,8 +326,7 @@ angular.module('ngResource', ['ng']).
           }
         });
         query.sort();
-        url = url.replace(/\/*$/, '');
-        return url + '/' + (query.length ? '?' + query.join('&') : '');
+        return url + (query.length ? '?' + query.join('&') : '');
       }
     };
 
